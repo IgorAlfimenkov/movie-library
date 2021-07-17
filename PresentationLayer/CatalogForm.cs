@@ -223,8 +223,8 @@ namespace Movie_library.PresentationLayer
         {
             Hide();
             string fname = Convert.ToString((sender as PictureBox).Tag);
-            //MovieInfo mi = new MovieInfo(fname);
-            //mi.Show();
+            MovieInfo mi = new MovieInfo(fname);
+            mi.Show();
         }
 
         
