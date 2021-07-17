@@ -15,7 +15,7 @@ namespace Movie_library.PresentationLayer
 {
     public partial class AddFilmForm : Form
     {
-       // Database db = new Database("data.xml");
+        Database db = new Database("data.xml");
         Service service = new Service();
         public Film film = new Film();
         public Film efilm = new Film();

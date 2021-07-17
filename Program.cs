@@ -17,7 +17,7 @@ namespace Movie_library
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AddFilmForm());
+            Application.Run(new CatalogForm());
         }
     }
 }
