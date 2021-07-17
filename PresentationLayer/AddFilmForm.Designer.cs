@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -39,6 +40,25 @@
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.openFileDialog2 = new System.Windows.Forms.OpenFileDialog();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -92,7 +112,6 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Year";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // textBox3
             // 
@@ -136,11 +155,179 @@
             this.textBox5.Size = new System.Drawing.Size(223, 42);
             this.textBox5.TabIndex = 10;
             // 
+            // label7
+            // 
+            this.label7.Location = new System.Drawing.Point(12, 411);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(88, 43);
+            this.label7.TabIndex = 11;
+            this.label7.Text = "Duration";
+            this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(113, 421);
+            this.textBox6.Multiline = true;
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(223, 42);
+            this.textBox6.TabIndex = 12;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(12, 484);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 13;
+            this.button4.Text = "Back";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(113, 484);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 23);
+            this.button5.TabIndex = 14;
+            this.button5.Text = "Exit";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(603, 84);
+            this.textBox8.Multiline = true;
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(223, 35);
+            this.textBox8.TabIndex = 15;
+            // 
+            // listBox1
+            // 
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.ItemHeight = 16;
+            this.listBox1.Location = new System.Drawing.Point(603, 125);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(223, 84);
+            this.listBox1.TabIndex = 16;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(858, 125);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(121, 35);
+            this.button2.TabIndex = 17;
+            this.button2.Text = "Add actor";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click_1);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(858, 174);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(121, 35);
+            this.button6.TabIndex = 18;
+            this.button6.Text = "Delete actor";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(858, 314);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(121, 35);
+            this.button7.TabIndex = 22;
+            this.button7.Text = "Delete genre";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(858, 265);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(121, 35);
+            this.button3.TabIndex = 21;
+            this.button3.Text = "Add genre";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // listBox2
+            // 
+            this.listBox2.FormattingEnabled = true;
+            this.listBox2.ItemHeight = 16;
+            this.listBox2.Location = new System.Drawing.Point(603, 265);
+            this.listBox2.Name = "listBox2";
+            this.listBox2.Size = new System.Drawing.Size(223, 84);
+            this.listBox2.TabIndex = 20;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(603, 224);
+            this.textBox9.Multiline = true;
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(223, 35);
+            this.textBox9.TabIndex = 19;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(603, 370);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(103, 34);
+            this.button8.TabIndex = 23;
+            this.button8.Text = "Add poster";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(723, 370);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(103, 34);
+            this.button9.TabIndex = 24;
+            this.button9.Text = "Add trailer";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // openFileDialog2
+            // 
+            this.openFileDialog2.FileName = "openFileDialog2";
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(756, 453);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(223, 43);
+            this.button1.TabIndex = 25;
+            this.button1.Text = "Add Film";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // AddFilmForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(930, 519);
+            this.ClientSize = new System.Drawing.Size(1001, 519);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.button9);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.listBox2);
+            this.Controls.Add(this.textBox9);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.listBox1);
+            this.Controls.Add(this.textBox8);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.textBox6);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.textBox4);
@@ -154,6 +341,7 @@
             this.Controls.Add(this.label1);
             this.Name = "AddFilmForm";
             this.Text = "AddFilmForm";
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -172,5 +360,23 @@
         private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.TextBox textBox8;
+        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.OpenFileDialog openFileDialog2;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.Button button1;
     }
 }
